@@ -4919,7 +4919,32 @@ var ZA_PATCH = {
         target: 'allAdjacentFoes'
     }
 };
-var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, ZA_PATCH);
+var UM_PATCH = {
+    'Rapid Fire': {
+        bp: 15,
+        type: 'Fire',
+        multihit: [2, 5],
+        priority: 1,
+        category: 'Special'
+    },
+    'Sunken Lunge': {
+        bp: 60,
+        type: 'Water',
+        priority: 2,
+        makesContact: true,
+        isBite: true,
+        category: 'Physical',
+        secondaries: true
+    },
+    'Starburst': {
+        bp: 40,
+        type: 'Fairy',
+        priority: 1,
+        makesContact: true,
+        category: 'Physical'
+    }
+};
+var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, ZA_PATCH, UM_PATCH);
 exports.MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 var Moves = (function () {
     function Moves(gen) {

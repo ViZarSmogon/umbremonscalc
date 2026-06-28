@@ -4931,8 +4931,33 @@ const ZA_PATCH: {[name: string]: DeepPartial<MoveData>} = {
     target: 'allAdjacentFoes',
   },
 };
+const UM_PATCH: {[name: string]: DeepPartial<MoveData>} = {
+  'Rapid Fire': {
+    bp: 15,
+    type: 'Fire',
+    multihit: [2, 5],
+    priority: 1,
+    category: 'Special',
+  },
+  'Sunken Lunge': {
+    bp: 60,
+    type: 'Water',
+    priority: 2,
+    makesContact: true,
+	isBite: true,
+    category: 'Physical',
+    secondaries: true,
+  },
+  'Starburst': {
+    bp: 40,
+    type: 'Fairy',
+    priority: 1,
+    makesContact: true,
+    category: 'Physical',
+  },
+};
 
-const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH, ZA_PATCH);
+const SV: {[name: string]: MoveData} = extend(true, {}, SS, SV_PATCH, ZA_PATCH, UM_PATCH);
 
 export const MOVES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 
