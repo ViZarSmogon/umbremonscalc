@@ -10487,7 +10487,14 @@ var ZA_PATCH = {
         baseSpecies: 'Zygarde'
     }
 };
-var UM_PATCH = {};
+var UM_PATCH = {
+    'Malamar-Mega': { abilities: { 0: 'Psychic Surge' } },
+    'Meowstic-F-Mega': { abilities: { 0: 'Opportunist' } },
+    'Meowstic-M-Mega': { abilities: { 0: 'Opportunist' } },
+    'Gallade-Mega': { abilities: { 0: 'Wind Rider' } },
+    Musharna: { abilities: { 0: 'Psychic Surge' } },
+    'Scolipede-Mega': { abilities: { 0: 'Stamina' } }
+};
 var SV = (0, util_1.extend)(true, {}, SS, SV_PATCH, PLA_PATCH, ZA_PATCH, UM_PATCH);
 exports.SPECIES = [{}, RBY, GSC, ADV, DPP, BW, XY, SM, SS, SV];
 var Species = (function () {

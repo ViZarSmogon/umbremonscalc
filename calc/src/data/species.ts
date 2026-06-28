@@ -10474,7 +10474,12 @@ const ZA_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
   },
 };
 const UM_PATCH: {[name: string]: DeepPartial<SpeciesData>} = {
-  
+  'Malamar-Mega': {abilities: {0: 'Psychic Surge'}},
+  'Meowstic-F-Mega': {abilities: {0: 'Opportunist'}},
+  'Meowstic-M-Mega': {abilities: {0: 'Opportunist'}},
+  'Gallade-Mega': {abilities: {0: 'Wind Rider'}},
+  Musharna: {abilities: {0: 'Psychic Surge'}},
+  'Scolipede-Mega': {abilities: {0: 'Stamina'}},
 };
 
 const SV: {[name: string]: SpeciesData} = extend(true, {}, SS, SV_PATCH, PLA_PATCH, ZA_PATCH, UM_PATCH);

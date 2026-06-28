@@ -179,7 +179,7 @@ export function calculateSMSSSV(
     'Well-Baked Body', 'White Smoke', 'Wind Rider', 'Wonder Guard',
     'Wonder Skin');
 
-  const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze');
+  const attackerIgnoresAbility = attacker.hasAbility('Mold Breaker', 'Teravolt', 'Turboblaze', 'Stalwart', 'Propeller Tail');
   const moveIgnoresAbility = move.named(
     'G-Max Drum Solo',
     'G-Max Fire Ball',
