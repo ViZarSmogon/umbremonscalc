@@ -27,6 +27,7 @@ export interface RawDesc {
     isAuroraVeil?: boolean;
     isFlowerGiftAttacker?: boolean;
     isFlowerGiftDefender?: boolean;
+    isMassive?: boolean;
     isPowerTrickAttacker?: boolean;
     isPowerTrickDefender?: boolean;
     isSteelySpiritAttacker?: boolean;

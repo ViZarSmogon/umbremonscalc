@@ -31,6 +31,8 @@ export interface RawDesc {
   isAuroraVeil?: boolean;
   isFlowerGiftAttacker?: boolean;
   isFlowerGiftDefender?: boolean;
+  //isMassive?: boolean;
+  //isHealer?: boolean;
   isPowerTrickAttacker?: boolean;
   isPowerTrickDefender?: boolean;
   isSteelySpiritAttacker?: boolean;
@@ -1068,6 +1070,12 @@ function buildDescription(description: RawDesc, attacker: Pokemon, defender: Pok
   if (description.isFlowerGiftDefender) {
     output += ' with an ally\'s Flower Gift';
   }
+  /*if (description.isMassive) {
+    output += ' with an ally\'s Massive';
+  }
+  if (description.isHealer) {
+    output += ' with an ally\'s Healer';
+  }*/
   if (description.isPowerTrickDefender) {
     output += ' with Power Trick';
   }

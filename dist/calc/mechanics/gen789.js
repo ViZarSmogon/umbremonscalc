@@ -80,6 +80,11 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         desc.isProtected = true;
         return result;
     }
+    if (field.defenderSide.isMassive && (field.gameType !== 'Singles' &&
+        ['allAdjacent', 'allAdjacentFoes'].includes(move.target))) {
+        desc.isMassive = true;
+        return result;
+    }
     if (move.name === 'Pain Split') {
         var average = Math.floor((attacker.curHP() + defender.curHP()) / 2);
         var damage_1 = Math.max(0, defender.curHP() - average);
@@ -449,6 +454,10 @@ function calculateSMSSSV(gen, attacker, defender, move, field) {
         (0, util_2.checkMultihitBoost)(gen, child, defender, move, field, desc);
         childDamage = calculateSMSSSV(gen, child, defender, move, field).damage;
         desc.attackerAbility = attacker.ability;
+    }
+    if (field.defenderSide.isMassive && isSpread) {
+        protect = true;
+        desc.isMassive = true;
     }
     var damage = [];
     for (var i = 0; i < 16; i++) {
