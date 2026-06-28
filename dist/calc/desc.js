@@ -857,9 +857,6 @@ function buildDescription(description, attacker, defender) {
     if (description.isFlowerGiftDefender) {
         output += ' with an ally\'s Flower Gift';
     }
-    if (description.isMassive) {
-        output += ' with an ally\'s Massive';
-    }
     if (description.isPowerTrickDefender) {
         output += ' with Power Trick';
     }
